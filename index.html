@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <form action="upload_file.php" method="post"
+        enctype="multipart/form-data">
+            Base File: <input type="file" name="file"><br>
+            Image File: <input type="file" name="compare"><br>
+            Display Type: <br>
+            <input type="radio" name="display" value="none" checked> None<br>
+            <input type="radio" name="display" value="Image1"> Image 1<br>
+            <input type="radio" name="display" value="Image2"> Image 2<br>
+            <input type="radio" name="display" value="lettermap1">
+                Letter Map 1: <input type="number" name="lettermapnumber1" value="0"><br>
+            <input type="radio" name="display" value="lettermap2">
+                Letter Map 2: <input type="number" name="lettermapnumber2" value="0"><br>
+            <input type="radio" name="display" value="lettercompare">
+            Compare Letter Map 1 <input type="number" name="lettermapnumbercompare1" value="0">
+            with Letter Map 2 <input type="number" name="lettermapnumbercompare2" value="0"><br>
+            <input type="radio" name="display" value="scan"> Scan Image for Letters<br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+
+    </body>
+</html>
